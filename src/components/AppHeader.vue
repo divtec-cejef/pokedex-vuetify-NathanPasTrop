@@ -19,9 +19,12 @@
 </template>
 
 <script setup>
-  import { ref } from 'vue'
+  import { reactive } from 'vue'
 
-  const menuItems = ref([
+  const menuItems = reactive([
     { title: 'Accueil', path: '/', icon: 'mdi-pokeball' },
+    { title: 'Favoris', path: '/favoris', icon: 'mdi-heart' },
+    { title: 'FAQ', path: '/faq', icon: 'mdi-frequently-asked-questions' },
+    { title: 'map', path: '/kantomap', icon: 'mdi-map' },
   ])
 </script>
